@@ -4,25 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash Register</title>
+    <title>Cash Register Manager-Mark10</title>
+    <link rel="stylesheet" href="style.css"/>
+
 </head>
 <body>
-    <h1>Cash Register</h1>
+    <h1>Cash Register Manager</h1>
+
+    <div>
+        Enter the bill amount and cash given by the customer and know minimum number of notes to return.
+    </div>
     
     <main>
-        <label for="initial-price">Initial Price
-            <input type="text" id="initial-price" placeholder="Enter Initial Price here">
+        <label for="bill-amount">Bill Amount
+            <input type="number" id="bill-amount" placeholder="Enter the Bill Amount">
         </label>
 
-        <label for="quantity-stocks" >Quantity of Stocks
-            <input type="text" id="quantity-stocks" placeholder="Enter the Number of Stocks bought" >
+        <label for="cash-amount" >Cash Given
+            <input type="number" id="cash-amount" placeholder="Enter the Cash Amount" >
         </label>
 
-        <label for="current-price">Current Price
-            <input type="text" id="current-price" placeholder="Enter the Current Price of the stocks">
-        </label>
+        <button id="submit-btn">Check</button>
 
-        <button id="submit-btn">Tell Me!!</button>
+        <table class="table">
+            <caption class="caption">Return Change</caption>
+            <tr class="rows">
+                <th>No of Notes	</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
 
         <div id="output-box"></div>
     </main>

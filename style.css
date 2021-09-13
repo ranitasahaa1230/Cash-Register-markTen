@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+    font-size: 1.5rem;
+    color:green;
+}
+
+main{
+    padding: 2rem;
+}
+label{
+    display: block;
+    padding: auto;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+input{
+    display: block;
+    margin-left: 34rem;
+    width: 20rem;
+    padding: 1rem;
+    font-weight: 700;
+    font-size:large;
+    margin-top: 7px;
+    border-radius: 14px;
+}
+
+button{
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 5px;
+    margin-left: 1.5rem;
+}
+
+.table{
+    padding: 2rem;
+    margin-left: 30rem;
+}
+
+.caption{
+    padding-top: 2rem;
+    font-size: larger;
+    margin-left: 5rem;
+}
+
+.rows{
+    font-size: large;
+}
