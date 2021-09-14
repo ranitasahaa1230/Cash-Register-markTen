@@ -23,7 +23,7 @@ submitBtn.addEventListener('click', validateBillAndCashAmount);
 
 function validateBillAndCashAmount(){
     hideMessage();
-
+    
     let billAmtValue= Number(billAmount.value);
     let cashGivenValue= Number(cashAmount.value);
 
