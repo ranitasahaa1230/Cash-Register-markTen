@@ -3,13 +3,15 @@ const cashAmount=document.querySelector('#cash-amount');
 const nextBtn=document.querySelector('#next-btn');
 const submitBtn=document.querySelector('#submit-btn');
 const cashGivenDiv=document.querySelector('.cash-given');
-const changeReturnDiv = document.querySelector(".changeReturn");
+const changeReturnDiv = document.querySelector(".change-return");
 const message=document.querySelector('#error-message');
 const Notes=document.querySelectorAll('.no-of-notes');
 
 const availableNotes=[2000,500,100,20,10,5,1];
 
-nextBtn.addEventListener('click',()=>{
+nextBtn.addEventListener('click', submitHandler);
+
+function submitHandler(){
     hideMessage();
     if(Number(billAmount.value)>0){
         nextBtn.style.display="none";
@@ -17,13 +19,13 @@ nextBtn.addEventListener('click',()=>{
     }else{
         showMessage("Enter valid bill amount");
     }
-})
+}
 
 submitBtn.addEventListener('click', validateBillAndCashAmount);
 
 function validateBillAndCashAmount(){
     hideMessage();
-    
+
     let billAmtValue= Number(billAmount.value);
     let cashGivenValue= Number(cashAmount.value);
 
@@ -33,7 +35,7 @@ function validateBillAndCashAmount(){
             showMessage("Enter valid amount in cash given field");
             return;
         }
-        if(billAmtValue > cashGivenValue){
+        else if(billAmtValue > cashGivenValue){
             showMessage("Cash is less than bill, please enter right amount");
             return;
         }

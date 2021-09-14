@@ -2,6 +2,8 @@ body{
     text-align: center;
     font-size: 1rem;
     color:green;
+    margin: 0;
+    
 }
 
 p{
@@ -30,6 +32,13 @@ input{
     border-radius: 14px;
 }
 
+.cash-given{
+    display: none;
+}
+.change-return{
+    display: none;
+}
+
 button{
     font-size: 1.4rem;
     background-color: blueviolet;
@@ -38,10 +47,9 @@ button{
     margin-left: 1.5rem;
 }
 
-.table{
+table{
     padding: 2rem;
     margin-left: 28rem;
-
 }
 
 
