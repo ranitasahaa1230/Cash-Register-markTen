@@ -1,32 +1,37 @@
 body{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:green;
 }
 
-main{
-    padding: 2rem;
+p{
+    font-size: 1.3rem;
+    color: black;
 }
+
 label{
     display: block;
-    padding: auto;
     align-items: center;
     margin-bottom: 2rem;
+    margin-left: 5rem;
+    font-size: large;
+    font-weight: 700;
+    color:brown;
 }
 
 input{
     display: block;
     margin-left: 34rem;
-    width: 20rem;
+    width: 18rem;
     padding: 1rem;
-    font-weight: 700;
+    font-weight: 300;
     font-size:large;
-    margin-top: 7px;
+    margin-top: 4px;
     border-radius: 14px;
 }
 
 button{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     background-color: blueviolet;
     color: aliceblue;
     padding: 5px;
@@ -35,15 +40,38 @@ button{
 
 .table{
     padding: 2rem;
-    margin-left: 30rem;
+    margin-left: 28rem;
+
 }
 
+
 .caption{
-    padding-top: 2rem;
-    font-size: larger;
-    margin-left: 5rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    
 }
 
 .rows{
-    font-size: large;
+    display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  padding: 10px;  
+  grid-gap: 8px;
+  background-color: aqua;
+  color: black;
+}
+
+.rows>th{
+    background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.2rem;
+  text-align: center;
+  font-size: larger;
+  
+}
+
+.rows>td{
+ background-color: rgba(255, 255, 255, 0.8);  
+  padding: 1.2rem;
+  text-align: center;
+  font-size: larger;
+  
 }
