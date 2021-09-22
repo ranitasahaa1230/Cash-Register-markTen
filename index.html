@@ -9,99 +9,76 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1 class="heading">Cash Register Manager</h1>
-
-      <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return. </p>
-
-      <label for="bill-amount">Bill Amount:
-        <input type="number" id="bill-amount"
-          placeholder="Enter the Bill Amount"
-        />
-      </label>
-
-      <button id="next-btn">Next</button>
-
-      <div class="cash-given">
-        <label for="cash-amount"
-          >Cash Given:
-          <input
-            type="number"
-            id="cash-amount"
-            placeholder="Enter the Cash Amount"
+    <section>
+      <div class="container">
+        <h1 class="heading">Cash Register Manager</h1>
+  
+        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return. </p>
+  
+        <label for="bill-amount">Bill Amount:
+          <input type="number" id="bill-amount"
+            placeholder="Enter the Bill Amount"
           />
         </label>
-        <button id="submit-btn">Check</button>
+  
+        <button id="next-btn">Next</button>
+  
+        <div class="cash-given">
+          <label for="cash-amount"
+            >Cash Given:
+            <input
+              type="number"
+              id="cash-amount"
+              placeholder="Enter the Cash Amount"
+            />
+          </label>
+          <button id="submit-btn">Check</button>
+        </div>
+  
+        <p id="error-message"></p>
+  
+        <div class="change-return">
+          <table class="table">
+            <caption class="caption">
+              Return Change
+            </caption>
+            <tr class="rows">
+              <th>No of Notes</th>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+              <td class="no-of-notes"></td>
+            </tr>
+  
+            <tr class="rows">
+              <th>Note</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>100</td>
+              <td>20</td>
+              <td>10</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+          </table>
+        </div>
+  
       </div>
+    </section>
 
-      <p id="error-message"></p>
-
-      <div class="change-return">
-        <table class="table">
-          <caption class="caption">
-            Return Change
-          </caption>
-          <tr class="rows">
-            <th>No of Notes</th>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-          </tr>
-
-          <tr class="rows">
-            <th>Note</th>
-            <td>2000</td>
-            <td>500</td>
-            <td>100</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td>1</td>
-          </tr>
-        </table>
-      </div>
-
-    </div>
     <footer>
-      <p align="center">
-        <a href="https://github.com/ranitasahaa1230" target="blank"
-          ><img
-            align="center"
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
-            alt="ranitasahaa1230"
-            height="30"
-            width="40"
-        /></a>
-        <a href="https://twitter.com/RanitaS99535426" target="blank"
-          ><img
-            align="center"
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
-            alt="RanitaS99535426"
-            height="30"
-            width="40"
-        /></a>
-        <a href="https://linkedin.com/in/saharanitaa1230dreamer" target="blank"
-          ><img
-            align="center"
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
-            alt="saharanitaa1230dreamer"
-            height="30"
-            width="40"
-        /></a>
-        <a href="https://instagram.com/suitcase_full_of_sunshine" target="blank"
-          ><img
-            align="center"
-            src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
-            alt="suitcase_full_of_sunshine"
-            height="30"
-            width="40"
-        /></a>
-      </p>
-    </footer>
+      <p class="section">
+          <article>Connect with me!💕</article>
+      <a href="https://github.com/ranitasahaa1230"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" /></a>
+      <a href="https://twitter.com/RanitaS99535426"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"/></a>
+      <a href="https://linkedin.com/in/saharanitaa1230dreamer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" /></a>
+      <a href="https://instagram.com/suitcase_full_of_sunshine"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"/></a>
+      
+      </p>    
+  </footer>
     <script src="script.js"></script>
   </body>
 </html>
